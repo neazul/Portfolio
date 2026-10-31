@@ -1,0 +1,85 @@
+@media (max-width: 900px) {
+    .container { width: min(100% - 42px, 720px); }
+    .main-nav { gap: 18px; }
+    .hero, .hero-grid { min-height: 630px; }
+    .hero-grid { grid-template-columns: 1.1fr .9fr; }
+    .hero-monogram { font-size: 290px; }
+    .orbit-one { width: 300px; height: 300px; }
+    .orbit-two { width: 370px; height: 370px; }
+    .about-grid, .experience-grid { grid-template-columns: .45fr 1.55fr; gap: 28px; }
+    .about-stats { grid-column: 2; display: flex; }
+    .stat-card { flex: 1; }
+    .stat-note { display: none; }
+    .experience-aside { display: none; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    .contact-grid { gap: 45px; }
+}
+@media (max-width: 650px) {
+    html { scroll-padding-top: 70px; }
+    .container { width: calc(100% - 38px); }
+    .nav-wrap { height: 72px; }
+    .menu-toggle { display: flex; width: 42px; height: 42px; border: 1px solid rgba(255,255,255,.25); background: transparent; border-radius: 50%; flex-direction: column; justify-content: center; align-items: center; gap: 5px; cursor: pointer; }
+    .menu-toggle span { width: 16px; height: 1.5px; background: white; transition: .2s; }
+    .main-nav { position: absolute; top: 72px; left: 0; width: 100%; background: #142938; padding: 20px 24px 25px; display: none; flex-direction: column; align-items: stretch; gap: 0; border-top: 1px solid rgba(255,255,255,.1); }
+    .main-nav.open { display: flex; }
+    .nav-link { padding: 12px 0; }
+    .nav-link.active:after { display: none; }
+    .nav-cta { text-align: center; margin-top: 12px; }
+    .hero, .hero-grid { min-height: 780px; }
+    .hero-grid { display: flex; flex-direction: column; align-items: stretch; justify-content: center; padding-top: 110px; }
+    .hero-copy { padding: 20px 0 0; }
+    .hero h1 { font-size: clamp(46px, 13vw, 66px); letter-spacing: -2px; }
+    .hero-role { font-size: 14px; }
+    .hero-description { font-size: 13px; max-width: 360px; }
+    .hero-meta { margin-top: 30px; flex-wrap: wrap; gap: 10px 20px; }
+    .hero-art { height: 260px; margin-top: 10px; }
+    .hero-monogram { font-size: 220px; }
+    .orbit-one { width: 220px; height: 220px; }
+    .orbit-two { width: 270px; height: 270px; }
+    .code-card { top: 25px; right: 0; }
+    .stack-card { bottom: 20px; left: 0; }
+    .hero-caption { bottom: 0; }
+    .section-pad { padding: 76px 0; }
+    .about-grid, .experience-grid { display: block; }
+    .section-index { margin-bottom: 28px; }
+    .about h2, .section-heading h2, .experience h2 { font-size: 35px; }
+    .about-stats { margin-top: 28px; }
+    .stat-card { padding: 13px; }
+    .stat-card strong { font-size: 24px; }
+    .section-heading { display: block; }
+    .section-heading > p { margin-top: 14px; }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .skill-card { min-height: 135px; }
+    .project-grid { grid-template-columns: 1fr; gap: 28px; }
+    .project-visual { height: 230px; }
+    .timeline-item { grid-template-columns: 12px 1fr; gap: 10px; }
+    .timeline-date { grid-column: 2; }
+    .timeline-item > div:last-child { grid-column: 2; }
+    .contact-grid { display: block; }
+    .contact h2 { font-size: 48px; }
+    .contact-details { margin-top: 45px; padding-left: 0; border-left: 0; }
+    .contact-details > a, .contact-details > div:not(.social-links) { grid-template-columns: 65px 1fr 18px; }
+    .contact-details span { font-size: 11px; }
+    .footer-wrap { padding: 22px 0; flex-wrap: wrap; }
+    .footer-wrap p { order: 3; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+}
+
+
+@media (max-width: 650px) {
+    .hero-socials { margin-top: 21px; gap: 7px; }
+    .hero-socials a { height: 34px; padding: 0 10px; }
+}
+
+
+@media (max-width: 650px) {
+    .social-float { right: 17px; bottom: 18px; width: 58px; height: 58px; }
+    .social-float-toggle { width: 56px; height: 56px; }
+    .social-float-menu { bottom: 70px; gap: 10px; }
+    .float-social { width: 49px; height: 49px; }
+    .float-tooltip { display: none; }
+}
